@@ -63,7 +63,7 @@ install_bun() {
 
   local target
 
-  if [ "$OS" = "Windows_NT" ]; then
+  if [ "${OS:-unknown}" = "Windows_NT" ]; then
     echo "error: Please install Bun using Windows Subsystem for Linux."
     exit 1
   else
