@@ -1,23 +1,18 @@
-# asdf-deno
+# asdf-bun
 
-[Deno](https://deno.land) plugin for asdf version manager
-
-## Build History
-
-[![Build history](https://buildstats.info/github/chart/asdf-community/asdf-deno?branch=master)](https://github.com/asdf-community/asdf-deno/actions)
+[Bun](https://bun.sh/) plugin for asdf version manager
 
 ## Prerequirements
 
 - Make sure you have the required dependencies installed:
   - curl
   - git
-  - gunzip (for v0.35.0 or lower)
-  - unzip (for v0.36.0 or higher)
+  - unzip
 
 ## Installation
 
 ```bash
-asdf plugin-add deno https://github.com/asdf-community/asdf-deno.git
+asdf plugin-add bun https://github.com/BurntCaramel/asdf-bun.git
 ```
 
 ## Usage
