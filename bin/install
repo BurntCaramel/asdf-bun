@@ -94,6 +94,7 @@ install_bun() {
   echo "* $download_url"
   curl --fail --silent --location --create-dirs --output "$source_path" "$download_url"
   $uncompress_command "$source_path"
+  mv "${install_path}/bun-${target}/bun" "${install_path}/bin/bun"
   chmod +x "${install_path}/bin/bun"
   mkdir "${install_path}/.bun"
   rm "$source_path"
