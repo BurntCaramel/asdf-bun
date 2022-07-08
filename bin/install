@@ -90,7 +90,7 @@ install_bun() {
   uncompress_command="unzip -d ${install_path}/bin"
 
   local download_url="https://github.com/Jarred-Sumner/bun/releases/download/v${version}/${archive_file}"
-  local source_path="${install_path}/bin/bun.${archive_format}"
+  local source_path="${install_path}/bin/bun.zip"
 
   echo "* Downloading and installing bun..."
   curl --fail --silent --location --create-dirs --output "$source_path" "$download_url"
