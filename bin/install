@@ -6,7 +6,7 @@ trap cleanup SIGINT SIGTERM ERR
 
 cleanup() {
   trap - SIGINT SIGTERM ERR
-  rm -rf "$ASDF_INSTALL_PATH"
+  #rm -rf "$ASDF_INSTALL_PATH"
   echo
   echo -e "Cleanup: Something went wrong!"
   echo
