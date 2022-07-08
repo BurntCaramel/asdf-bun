@@ -84,7 +84,7 @@ install_bun() {
   fi
 
   local archive_file="bun-${target}.zip"
-  local uncompress_command="unzip -d ${install_path}/bin"
+  local uncompress_command="unzip -d ${install_path}"
 
   local download_url="https://github.com/Jarred-Sumner/bun/releases/download/bun-v${version}/${archive_file}"
   local source_path="${install_path}/bun.zip"
