@@ -3,7 +3,7 @@
 set -eo pipefail
 
 cmd="curl --silent --location"
-releases_path="https://api.github.com/repos/Jarred-Sumner/bun/releases?per_page=100"
+releases_path="https://api.github.com/repos/oven-sh/bun/releases?per_page=100"
 
 if [ -n "$GITHUB_API_TOKEN" ]; then
   cmd="$cmd --header 'Authorization: token $GITHUB_API_TOKEN'"
