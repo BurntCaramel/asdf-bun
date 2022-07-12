@@ -16,8 +16,8 @@ sort_versions() {
 
 versions=$(
   eval "$cmd $releases_path" |
-    grep -o '"name": "Bun v.*' |
-    sed 's/"name": "Bun v\(.*\)",/\1/' |
+    grep -o '"tag_name": "bun-v.*' |
+    sed 's/"tag_name": "bun-v\(.*\)",/\1/' |
     sort_versions |
     xargs
 )
