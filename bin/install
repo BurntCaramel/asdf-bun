@@ -53,7 +53,7 @@ install_bun() {
   local install_path=$3
 
   if ! command -v unzip >/dev/null; then
-    echo -e "${Red}error${Color_Off}: unzip is required to install Bun (see: https://github.com/Jarred-Sumner/bun#unzip-is-required)." 1>&2
+    echo -e "${Red}error${Color_Off}: unzip is required to install Bun (see: https://github.com/oven-sh/bun#unzip-is-required)." 1>&2
     exit 1
   fi
 
@@ -86,7 +86,7 @@ install_bun() {
   local archive_file="bun-${target}.zip"
   local uncompress_command="unzip -d ${install_path}/bin"
 
-  local download_url="https://github.com/Jarred-Sumner/bun/releases/download/bun-v${version}/${archive_file}"
+  local download_url="https://github.com/oven-sh/bun/releases/download/bun-v${version}/${archive_file}"
   local source_path="${install_path}/bun.zip"
 
   echo "* Downloading and installing bun..."
