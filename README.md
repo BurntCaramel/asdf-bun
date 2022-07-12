@@ -13,6 +13,16 @@
 
 ```bash
 asdf plugin-add bun https://github.com/BurntCaramel/asdf-bun.git
+
+# Now you can manage bun through asdf:
+asdf list all bun
+asdf install bun latest
+asdf install bun 0.1.2 # Install multiple versions at once
+asdf install bun 0.1.3 # Install multiple versions at once
+asdf global bun latest
+
+# Now bun is installed!
+bun help
 ```
 
 ## Usage
